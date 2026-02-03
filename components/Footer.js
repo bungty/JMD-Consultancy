@@ -64,7 +64,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-12 py-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} JMD Consultancy. All Rights Reserved.
+        © {new Date().getFullYear()} JMD Consultancy. Al Rights Reserved.
       </div>
     </footer>
   );
