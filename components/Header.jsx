@@ -1,54 +1,73 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="w-full border-b">
-      {/* Top Header */}
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
-        {/* Logo + Tagline */}
-        <div className="flex items-center gap-3">
-          <Image src="/logo.jpeg" alt="Medimesh Logo" width={60} height={60} />
-          <div>
-            <h1 className="font-bold text-lg">MEDIMESH</h1>
-            <p className="text-sm text-gray-500">
-              A Complete Solution for All Type of Uniforms
-            </p>
-          </div>
+    <header className="bg-white shadow-md sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+        {/* Logo */}
+        <div className="text-xl font-bold text-blue-700">
+          JMD Consultancy
+          <p className="text-xs text-gray-500 font-normal">
+            HR Recruitment & Manpower Services
+          </p>
         </div>
 
-        {/* Menu */}
-        <nav className="hidden md:flex gap-6 font-medium text-sm">
-          <Link href="#">HOME</Link>
-          <Link href="#">ABOUT US</Link>
-          <Link href="#">CLIENTS</Link>
-          <Link href="#">CONTACT US</Link>
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
+          <Link href="/" className="hover:text-blue-700 transition">Home</Link>
+          <Link href="/services" className="hover:text-blue-700 transition">Services</Link>
+          <Link href="/about" className="hover:text-blue-700 transition">About Us</Link>
+          <Link href="/careers" className="hover:text-blue-700 transition">Careers</Link>
+          <Link href="/contact" className="hover:text-blue-700 transition">Contact</Link>
         </nav>
 
-        {/* Button */}
-        <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-5 py-2 rounded-md font-semibold text-sm">
-          Get A Quote
+        {/* Desktop Call Button */}
+        <div className="hidden md:block">
+          <a
+            href="tel:9654576537"
+            className="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition"
+          >
+            Call: 9654576537
+          </a>
+        </div>
+
+        {/* Mobile Hamburger */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden relative w-8 h-8"
+        >
+          <span className={`block absolute h-0.5 w-8 bg-gray-800 transition-all duration-300 ${menuOpen ? "rotate-45 top-3.5" : "top-2"}`} />
+          <span className={`block absolute h-0.5 w-8 bg-gray-800 transition-all duration-300 ${menuOpen ? "opacity-0" : "top-4"}`} />
+          <span className={`block absolute h-0.5 w-8 bg-gray-800 transition-all duration-300 ${menuOpen ? "-rotate-45 top-3.5" : "top-6"}`} />
         </button>
       </div>
 
-      {/* Bottom Category Bar */}
-      <div className="bg-indigo-900 text-white">
-        <div className="max-w-7xl mx-auto flex justify-between text-sm font-semibold">
-          {[
-            "SCHOOLS UNIFORMS",
-            "HOSPITAL UNIFORMS",
-            "HOTEL UNIFORMS",
-            "CORPORATE UNIFORMS",
-            "INDUSTRIAL UNIFORMS",
-            "DEFENCE UNIFORMS",
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="px-5 py-3 border-r border-white/20 hover:bg-indigo-800 cursor-pointer transition"
-            >
-              {item}
-            </div>
-          ))}
+      {/* Mobile Menu Panel */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="bg-white border-t px-6 py-4 space-y-3 text-gray-700 font-medium">
+          <Link onClick={() => setMenuOpen(false)} href="/" className="block hover:text-blue-700 transition">Home</Link>
+          <Link onClick={() => setMenuOpen(false)} href="/services" className="block hover:text-blue-700 transition">Services</Link>
+          <Link onClick={() => setMenuOpen(false)} href="/about" className="block hover:text-blue-700 transition">About Us</Link>
+          <Link onClick={() => setMenuOpen(false)} href="/careers" className="block hover:text-blue-700 transition">Careers</Link>
+          <Link onClick={() => setMenuOpen(false)} href="/contact" className="block hover:text-blue-700 transition">Contact</Link>
+
+          {/* Mobile Call Button */}
+          <a
+            href="tel:9654576537"
+            className="block text-center bg-blue-700 text-white py-2 rounded-lg hover:bg-blue-800 transition mt-3"
+          >
+            Call: 9654576537
+          </a>
         </div>
       </div>
     </header>

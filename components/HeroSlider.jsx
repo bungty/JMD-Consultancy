@@ -1,77 +1,62 @@
 "use client";
 
-import { useState, useEffect } from "react";
 
-const slides = [
-  {
-    title: "Premium Uniforms for Every Industry",
-    desc: "High-quality school, hospital, hotel and corporate uniforms.",
-    image: "/slider1.webp",
-  },
-  {
-    title: "Trusted Uniform Manufacturing Partner",
-    desc: "Custom tailored uniforms with best fabric quality.",
-    image: "/slider2.webp",
-  },
-  {
-    title: "Complete Uniform Solutions",
-    desc: "Serving schools, hospitals, hotels and industries.",
-    image: "/agarbatti.png",
-  },
-];
+import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSlider() {
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
-    <section className="relative w-full h-[520px] overflow-hidden">
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === current ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
-          style={{
-            backgroundImage: `url(${slide.image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          {/* Dark Overlay */}
-          <div className="w-full h-full bg-black/50 flex items-center">
-            <div className="max-w-7xl mx-auto px-6 text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                {slide.title}
-              </h1>
-              <p className="max-w-xl mb-6 text-lg">{slide.desc}</p>
+    <section className="bg-gradient-to-r from-blue-700 to-blue-500 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+        
+        {/* Left Content */}
+        <div>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+            Reliable HR Recruitment & Manpower Services Across India
+          </h1>
 
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-md font-semibold transition">
-                Get A Quote
-              </button>
-            </div>
+          <p className="mt-4 text-lg text-blue-100">
+            JMD Consultancy delivers professional, scalable, and result-driven
+            recruitment, staffing, payroll outsourcing, and manpower solutions
+            for organizations nationwide.
+          </p>
+
+          <div className="mt-6 flex gap-4">
+            <Link
+              href="/contact"
+              className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+            >
+              Get Hiring Support
+            </Link>
+
+            <Link
+              href="/services"
+              className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition"
+            >
+              View Services
+            </Link>
+          </div>
+
+          {/* Quick Highlights */}
+          <div className="mt-8 flex flex-wrap gap-6 text-sm text-blue-100">
+            <span>✔ End-to-End Hiring</span>
+            <span>✔ Pan India Recruitment</span>
+            <span>✔ Bulk & Mass Hiring</span>
+            <span>✔ Payroll Outsourcing</span>
           </div>
         </div>
-      ))}
 
-      {/* Dots Navigation */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrent(index)}
-            className={`w-3 h-3 rounded-full transition ${
-              index === current ? "bg-yellow-400" : "bg-white/60"
-            }`}
+        {/* Right Image */}
+        <div className="hidden md:block">
+          <Image
+            src="/HR Recruitment.webp"
+            alt="HR Recruitment"
+            width={500}
+            height={400}
+            className="rounded-xl shadow-lg"
           />
-        ))}
+        </div>
+
       </div>
     </section>
   );
