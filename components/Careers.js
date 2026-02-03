@@ -5,7 +5,7 @@ export default function Careers() {
     <main className="bg-gray-50">
 
       {/* Hero Section */}
-      <section className="bg-blue-700 text-white py-20">
+      <section className="bg-green-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold">
             Careers at JMD Consultancy
@@ -96,7 +96,7 @@ export default function Careers() {
 
                 <a
                   href="#apply"
-                  className="inline-block mt-4 text-blue-700 font-semibold hover:underline"
+                  className="inline-block mt-4 text-green-700 font-semibold hover:underline"
                 >
                   Apply Now →
                 </a>
@@ -151,7 +151,7 @@ export default function Careers() {
 
             <button
               type="submit"
-              className="w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800 transition font-semibold"
+              className="w-full bg-green-700 text-white py-3 rounded-lg hover:bg-blue-800 transition font-semibold"
             >
               Submit Application
             </button>

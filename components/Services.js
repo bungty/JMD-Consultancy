@@ -91,7 +91,7 @@ export default function Services() {
             >
 
               {/* Icon */}
-              <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-blue-100 text-blue-700 group-hover:bg-blue-700 group-hover:text-white transition mb-4">
+              <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-blue-100 text-blue-green group-hover:bg-green-700 group-hover:text-white transition mb-4">
                 {service.icon}
               </div>
 

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function HeroSlider() {
   return (
-    <section className="bg-gradient-to-r from-blue-700 to-blue-500 text-white">
+    <section className="bg-gradient-to-r from-blue-700 to-green-500 text-white">
       <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
         
         {/* Left Content */}

@@ -49,7 +49,7 @@ export default function About() {
           <div className="mt-8">
             <Link
               href="/contact"
-              className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition"
+              className="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition"
             >
               Contact Our Team
             </Link>

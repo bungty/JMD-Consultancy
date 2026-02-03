@@ -11,7 +11,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
         {/* Logo */}
-        <div className="text-xl font-bold text-blue-700">
+        <div className="text-xl font-bold text-green-700">
           JMD Consultancy
           <p className="text-xs text-gray-500 font-normal">
             HR Recruitment & Manpower Services
@@ -31,7 +31,7 @@ export default function Header() {
         <div className="hidden md:block">
           <a
             href="tel:9654576537"
-            className="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition"
+            className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition"
           >
             Call: 9654576537
           </a>
