@@ -33,7 +33,7 @@ export default function Header() {
             href="tel:9654576537"
             className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition"
           >
-            Call: 9654576537
+            Call:  9654576537
           </a>
         </div>
 
