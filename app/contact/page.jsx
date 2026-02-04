@@ -1,10 +1,10 @@
 "use client";
-import Contact from "@/components/Contact.js";
+import Contactt from "@/components/Contact.js";
 
 export default function Contact() {
   return (
     <main>
-      <Contact />
+      <Contactt />
     </main>
    
   );

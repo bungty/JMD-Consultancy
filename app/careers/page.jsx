@@ -1,10 +1,10 @@
 "use client";
-import Careers from "@/components/Careers.js";
+import Careerss from "@/components/Careers.js";
 
 export default function Careers() {
   return (
     <main>
-      <Careers />
+      <Careerss />
     </main>
 
   

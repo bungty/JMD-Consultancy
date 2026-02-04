@@ -19,7 +19,7 @@ export default function About() {
 
         {/* Right Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-600">
             About JMD Consultancy
           </h2>
 
@@ -49,7 +49,7 @@ export default function About() {
           <div className="mt-8">
             <Link
               href="/contact"
-              className="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition"
+              className="bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-600 transition"
             >
               Contact Our Team
             </Link>

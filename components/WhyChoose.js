@@ -71,12 +71,12 @@ export default function WhyChoose() {
               className="group bg-white border rounded-2xl p-7 text-center hover:shadow-xl hover:-translate-y-1 transition duration-300"
             >
               {/* Icon */}
-              <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-xl bg-blue-100 text-green-700 group-hover:bg-green-700 group-hover:text-white transition mb-4">
+              <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-xl bg-yellow-100 text-yellow-700 group-hover:bg-yellow-700 group-hover:text-white transition mb-4">
                 {item.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-blue-700 transition">
+              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-yellow-700 transition">
                 {item.title}
               </h3>
 

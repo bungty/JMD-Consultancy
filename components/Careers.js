@@ -5,7 +5,7 @@ export default function Careers() {
     <main className="bg-gray-50">
 
       {/* Hero Section */}
-      <section className="bg-green-700 text-white py-20">
+      <section className="bg-yellow-500 text-white py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold">
             Careers at JMD Consultancy

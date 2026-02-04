@@ -68,7 +68,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-yellow-50">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
@@ -91,12 +91,12 @@ export default function Services() {
             >
 
               {/* Icon */}
-              <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-blue-100 text-blue-green group-hover:bg-green-700 group-hover:text-white transition mb-4">
+              <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-100 text-blue-yellow group-hover:bg-yellow-500 group-hover:text-white transition mb-4">
                 {service.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-blue-700 transition">
+              <h3 className="text-lg font-semibold text-yellow-600 group-hover:text-blue-700 transition">
                 {service.title}
               </h3>
 

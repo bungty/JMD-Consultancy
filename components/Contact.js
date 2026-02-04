@@ -81,7 +81,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full bg-green-700 text-white py-3 rounded-lg hover:bg-blue-800 transition font-semibold"
+              className="w-full bg-yellow-500 text-white py-3 rounded-lg hover:bg-yellow-600 transition font-semibold"
             >
               Submit Inquiry
             </button>
