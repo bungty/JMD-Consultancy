@@ -3,6 +3,7 @@
 export default function Careers() {
   return (
     <main className="bg-gray-50">
+      
 
       {/* Hero Section */}
       <section className="bg-yellow-500 text-white py-20">

@@ -1,13 +1,25 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-export default function About() {
+export default function HrProcess() {
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <>
+    <section className="bg-yellow-500 text-white py-20">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold">
+         Pan India Recruitment
+          </h1>
+          <p className="mt-4 text-blue-100 max-w-2xl mx-auto">
+            Join our growing HR and recruitment team. Explore exciting career
+            opportunities in HR, recruitment, staffing, payroll, and manpower services.
+          </p>
+        </div>
+      </section>
+       <section className="bg-gray-50 py-20">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-1 gap-12 items-center">
         
         {/* Left Image */}
-        <div>
+        {/* <div>
           <Image
             src="/HR Recruitment.webp"
             alt="About JMD Consultancy"
@@ -15,20 +27,20 @@ export default function About() {
             height={400}
             className="rounded-xl shadow-lg"
           />
-        </div>
+        </div> */}
 
         {/* Right Content */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-yellow-600">
-            About JMD Consultancy
+            Pan India Recruitment
           </h2>
 
           <p className="mt-4 text-gray-600 leading-relaxed">
-            JMD Consultancy is a trusted HR recruitment and manpower solutions firm committed to connecting the right talent with the right opportunities. Established with the vision of simplifying hiring for organizations and creating meaningful careers for candidates, we act as a strategic HR partner for businesses across industries. Our focus is not just recruitment, but building long-term workforce solutions that support organizational growth and operational success.
+           Our Pan India Recruitment service supports hiring across multiple cities and states. With a strong national network, we ensure location-specific sourcing, compliance, and workforce availability across India.
           </p>
 
           <p className="mt-4 text-gray-600 leading-relaxed">
-           At JMD Consultancy, we understand that people are the most valuable asset of any organization. With this belief at our core, we provide end-to-end recruitment and manpower services tailored to meet the dynamic needs of today’s competitive market. From startups and SMEs to large enterprises, we support our clients with reliable, scalable, and cost-effective HR solutions.
+           This service is ideal for organizations expanding geographically and seeking consistent recruitment support nationwide.
           </p>
 
           {/* Highlights */}
@@ -52,5 +64,7 @@ export default function About() {
 
       </div>
     </section>
+      </>
+   
   );
 }

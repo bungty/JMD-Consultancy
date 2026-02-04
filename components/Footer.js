@@ -13,9 +13,7 @@ export default function Footer() {
             JMD Consultancy
           </h3>
           <p className="mt-3 text-sm text-gray-400">
-            Professional HR Recruitment & Manpower Consultancy delivering
-            reliable, scalable, and result-oriented human resource solutions
-            across India.
+            JMD Consultancy is a trusted HR recruitment and manpower solutions firm committed to connecting the right talent with the right opportunities.
           </p>
         </div>
 
@@ -39,11 +37,11 @@ export default function Footer() {
             Our Services
           </h4>
           <ul className="space-y-2 text-sm">
-            <li>End-to-End Hiring</li>
-            <li>Bulk / Mass Hiring</li>
-            <li>Temporary Staffing</li>
-            <li>Payroll Outsourcing</li>
-            <li>Pan India Recruitment</li>
+            <li><Link href="/end-to-end-hiring" className="hover:text-white">End-to-End Hiring</Link></li>
+            <li><Link href="/bulk-mass-hiring" className="hover:text-white">Bulk / Mass Hiring</Link></li>
+            <li><Link href="/temporary-staffing" className="hover:text-white">Temporary Staffing</Link></li>
+            <li><Link href="/payroll-outsourcing" className="hover:text-white">Payroll Outsourcing</Link></li>
+            <li><Link href="/pan-india-recruitment" className="hover:text-white">Pan India Recruitment</Link></li>
           </ul>
         </div>
 

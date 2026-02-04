@@ -2,7 +2,9 @@
 
 export default function Contact() {
   return (
-    <section className="py-20 bg-white">
+    
+
+       <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
@@ -90,5 +92,8 @@ export default function Contact() {
         </div>
       </div>
     </section>
+ 
+    
+   
   );
 }
