@@ -16,8 +16,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "JMD Consultancy",
-  description: "Reliable HR Recruitment & Manpower Services Across India", 
+  description: "Reliable HR Recruitment & Manpower Services Across India",
+  icons: {
+    icon: "/logo.jpe",
+  },
 };
+
 
 export default function RootLayout({
   children,
