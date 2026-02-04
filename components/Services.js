@@ -10,84 +10,84 @@ export default function Services() {
       title: "End-to-End Hiring",
       desc: "Complete recruitment lifecycle management from requirement analysis to onboarding.",
       icon: <Briefcase />,
-      image: "https://joingenius.com/wp-content/uploads/2025/02/07-Hiring-Process-Flowchart-Shopify.png",
+      image: "End-to-End Hiring.png",
       link: "/end-to-end-hiring"
     },
     {
       title: "HR Process Outsourcing (HRO)",
       desc: "Outsourcing daily HR operations so organizations can focus on core business.",
       icon: <ClipboardList />,
-      image: "https://c8.alamy.com/comp/2SA9ETW/process-outsourcing-vector-company-hr-office-computer-technology-network-process-outsourcing-character-people-flat-cartoon-illustration-process-outsourcing-vector-2SA9ETW.jpg",
+      image: "HR Process Outsourcing.jpg",
       link: "/hr-process-outsourcing"
     },
     {
       title: "Campus Hiring",
       desc: "Structured hiring programs for fresh graduates and entry-level talent.",
       icon: <GraduationCap />,
-      image: "https://www.recruiter.com/recruiting/wp-content/uploads/2022/07/university-to-find-top-talent.jpg",
+      image: "Campus Hiring.webp",
       link: "/campus-hiring"
     },
     {
       title: "Bulk / Mass Hiring",
       desc: "Large-scale recruitment solutions for high-volume manpower needs.",
       icon: <Users />,
-      image: "https://www.ismartrecruit.com/upload/blog/main_image/image_(27).webp",
+      image: "Mass Hiring.webp",
       link: "/bulk-mass-hiring"
     },
     {
       title: "Temporary Staffing",
       desc: "Flexible workforce solutions for short-term and project-based requirements.",
       icon: <Clock />,
-      image: "https://osg.ca/wp-content/uploads/2018/09/Temporary-Workers.png",
+      image: "Temporary Staffing.png",
       link: "/temporary-staffing"
     },
     {
       title: "Contract Hiring",
       desc: "Contract-based hiring of skilled and semi-skilled professionals.",
       icon: <Layers />,
-      image: "https://images.business.com/app/uploads/2014/10/10124743/contractor-vs-employees-1024x739.png",
+      image: "Contract Hiring.png",
       link: "/contract-hiring"
     },
     {
       title: "Permanent Hiring",
       desc: "Quality recruitment for long-term roles with stability and retention focus.",
       icon: <UserPlus />,
-      image: "https://cdn.prod.website-files.com/5ec7dad2e6f6295a9e2a23dd/64d4ef71db3beb098e1eab9e_A01.png",
+      image: "Permanent Hiring.png",
       link: "/permanent-hiring"
     },
     {
       title: "Background Verification",
       desc: "Candidate verification services to reduce hiring risks and ensure authenticity.",
       icon: <ShieldCheck />,
-      image: "https://thumbs.dreamstime.com/b/ome-line-%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5-185536470.jpg" , // verification/search theme
+      image: "Background Verification.webp" , // verification/search theme
       link: "/background-verification"
     },
     {
       title: "Payroll Outsourcing",
       desc: "Payroll processing, attendance coordination, and compliance support.",
       icon: <Wallet />,
-      image: "https://thumbs.dreamstime.com/b/company-transfers-recruitment-processes-to-external-service-provider-vector-illustration-flat-clip-art-rpo-recruitment-process-272644997.jpg",
+      image: "Payroll Outsourcing.webp",
       link: "/payroll-outsourcing" // outsourcing related
     },
     {
       title: "Third-Party Payroll",
       desc: "Simplified payroll and workforce management through outsourcing.",
       icon: <FileCheck />,
-      image: "https://thumbs.dreamstime.com/b/consulting-services-concept-hr-talent-management-payroll-outsourcing-finance-accounting-options-389884858.jpg",  // payroll outsourcing style
+      image: "Third-Party Payroll.webp",  // payroll outsourcing style
       link: "/third-party-payroll"
     },
     {
       title: "Internship Programs",
       desc: "Internship hiring solutions to support skill development and workforce planning.",
       icon: <Building2 />,
-      image: "https://images.wsj.net/im-00786799?width=700&height=466",
+      image: "Internship Programs.avif",
       link: "/internship-programs"
     },
     {
       title: "Pan India Recruitment",
       desc: "Nationwide recruitment services ensuring consistent hiring quality.",
       icon: <Globe />,
-      image: "https://thumbs.dreamstime.com/b/recruitment-agency-group-job-interviews-vector-recruitment-agency-group-job-interviews-hr-agency-concept-staff-recruitment-134093962.jpg",
+      image: "Pan India Recruitment.webp",
       link: "/pan-india-recruitment"
     }
   ];
