@@ -42,7 +42,7 @@ export default function HeroSlider() {
             <span>✔ End-to-End Hiring</span>
             <span>✔ Pan India Recruitment</span>
             <span>✔ Bulk & Mass Hiring</span>
-            <span>✔ Payroll Outsourcing</span>
+            <span>✔ Payroll Outsourcing </span>
           </div>
         </div>
 
